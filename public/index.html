@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>汉弗莱爵士 AI 助手</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="chat-app">
+    <header class="chat-header">
+      <div class="avatar">H</div>
+
+      <div>
+        <h1>汉弗莱爵士</h1>
+        <p>首相阁下的 AI 高级文官</p>
+      </div>
+    </header>
+
+    <section
+      id="chatMessages"
+      class="chat-messages"
+      aria-live="polite"
+    >
+      <div class="message assistant-message">
+        <div class="message-name">汉弗莱爵士</div>
+
+        <div class="message-content">
+          首相阁下，尽管在尚未明确议程之前便开始交谈，
+          从行政程序上看可能略显仓促，但我已经准备好回答您的问题。
+        </div>
+      </div>
+    </section>
+
+    <form id="chatForm" class="chat-form">
+      <label for="messageInput" class="sr-only">
+        输入消息
+      </label>
+
+      <textarea
+        id="messageInput"
+        placeholder="向汉弗莱爵士提问……"
+        rows="1"
+        required
+      ></textarea>
+
+      <button id="sendButton" type="submit">
+        发送
+      </button>
+    </form>
+
+    <p id="statusText" class="status-text"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

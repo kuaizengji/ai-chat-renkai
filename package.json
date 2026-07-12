@@ -4,13 +4,16 @@
   "description": "一个部署在公网服务器上的 AI 对话网站。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "pm2": "pm2 start server.js --name ai-chat-renkai"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "pm2": "^7.0.3"
   }
 }
